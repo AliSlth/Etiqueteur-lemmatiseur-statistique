@@ -17,14 +17,11 @@ Le projet est incomplet, il reste des fonctionnalités à développer.
 
 * Calcul argmax 
 
-3. 5. Probabilités pour une suite non rencontrée
-
 4. create_dic() : Création du dictionnaire 
 
 5. tag() : Lemmatisation et étiquetage 
 
 6. Evaluation
-## Ressources
 
 Corpus: 
 * Entraînement: “fr_gsd-ud-train.conll” (https://universaldependencies.org/treebanks/fr_gsd/)
