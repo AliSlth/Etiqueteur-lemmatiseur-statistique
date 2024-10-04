@@ -18,10 +18,6 @@ def p_form_lem(form_freq, form_lem_freq, output_shelve):
                 p_form_lem = value / freq_occurrence
                 output_file[suite] = p_form_lem
     
-form_freq = "training/stats_files/form"
-form_lem_freq = "training/stats_files/form_lem"
-output_shelve = "training/output_files/p_form_lem"
-
 p_form_lem(form_freq, form_lem_freq, output_shelve)
 
 
@@ -42,9 +38,6 @@ def p_lem_form(lem_freq, lem_form_freq, output_shelve):
                 p_form_lem = value / freq_occurrence
                 output_file[suite] = p_form_lem
 
-lem_freq = "training/stats_files/lem"
-lem_form_freq = "training/stats_files/lem_form"
-output_shelve = "training/output_files/p_lem_form"
 p_lem_form(lem_freq, lem_form_freq, output_shelve)
 
 
