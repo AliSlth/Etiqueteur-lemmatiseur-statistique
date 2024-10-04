@@ -163,9 +163,3 @@ def train(training_files_dir, stats_files_dir):
                 form_shelve.update(form_freq)
 
     return token_count
-
-# Appel de la fonction
-training_files_dir = "training/input_files"
-stats_files_dir = "training/stats_files"
-result = train(training_files_dir, stats_files_dir)
-print("Nombre de tokens traités :", result)
