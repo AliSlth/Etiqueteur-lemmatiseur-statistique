@@ -10,11 +10,11 @@ def train(training_files_dir, stats_files_dir):
     sur les bigrammes, trigrammes, lemmes, et formes.
     Les résultats sont stockés dans des shelves.
     
-    Args:
+    Entrée:
         training_files_dir (str): Chemin du répertoire contenant les fichiers d'entraînement.
         stats_files_dir (str): Chemin du répertoire pour stocker les statistiques.
 
-    Returns:
+    Sortie:
         int: Le nombre total de tokens traités.
     """
     token_count = 0  # Initialisation du compteur de tokens
