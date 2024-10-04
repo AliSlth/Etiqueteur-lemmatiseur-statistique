@@ -11,13 +11,11 @@ Le projet est incomplet, il reste des fonctionnalités à développer.
 
 3. Calculs de probabilités
 
-3. 1. p(lem i/context)
+* p(lem i/context)
 
-3. 2. p(cat i/context)
+* p(cat i/context)
 
-3. 3. Écriture au format csv
-
-3. 4. Calcul argmax 
+* Calcul argmax 
 
 3. 5. Probabilités pour une suite non rencontrée
 
@@ -50,17 +48,16 @@ Prérequis et installation :
 
 À partir du dictionnaire de formes fléchies "dico-utf8.xls"
 
-    pos_upos/scripts/mix_dico.py
+  `mix_dico.py`
 
-Les résultats sont dans `pos_upos/output_files/... `
 
 ## 2. train() Lecture du fichier conll et dictionnaires
 
- `training/scripts/train.py`
-Les dictionnaires shelves de sortie sont dans le dossier `training/stats_files`
+ `train.py`
+
 
 ### Description
-On regroupe toutes les lignes d'une phrase dans une liste, puis en les traitant ensemble. Lorsque la phrase est complète (ligne vide rencontrée), on ajoute les tokens de début et de fin de phrase <eos>. Ensuite, dans une seule boucle, le code calcule les bigrammes, trigrammes, et autres statistiques (lemmes, formes, etc.) en parcourant cette liste. 
+On traite les lignes qui commencent par un chiffre et stocke les tokens de cette ligne dans une variable phrase_courante. Lorsqu'on rencontre une nouvelle phrase (saut de ligne rencontré), on traite la phrase courante et on ajoute les tokens de début et de fin de phrase <eos>. Ensuite, dans une seule boucle, le code calcule les bigrammes, trigrammes, et autres statistiques (lemmes, formes, etc.) en parcourant cette liste. 
 
 ### Listes de variables
 
@@ -80,10 +77,5 @@ On regroupe toutes les lignes d'une phrase dans une liste, puis en les traitant 
 
 +`form_freq `fréquence d'occurrence des formes (fréquence utilisée plus tard pour la partie 3.5 du calcul des probabilités pour une suite non rencontrée)
 
-## 3. Calculs de probabilités p(lem_cat/ context) 
-
-### 3.1 p(lemi/context)
-
-Après avoir exécuté le script `training/scripts/train.py`, exécuter `training/scripts/calcul_p/proba_lem_1/calcul_p_lem_1.py`
 
 
