@@ -37,16 +37,10 @@ def process_dictionary(excel_file_path, output_csv_path):
     # Ajout du traitement pour les conjonctions
     conjunctions = ['mais', 'ou', 'et', 'donc', 'or', 'ni', 'car']
     df.loc[df[second_column].isin(conjunctions) & (df[third_column] == 'Con'), third_column] = 'CCONJ'
-
     # Remplacement de nom de catégorie
     df.loc[df[third_column].str.contains('Con', na=False), third_column] = 'SCONJ'
     df.loc[df[third_column].str.contains('Nom', na=False), third_column] = 'NOUN'
-
     # Renommage des colonnes
     df.columns = ['forme', 'lemme', 'catégorie']
-
     # Sauvegarde dans un fichier CSV
     df.to_csv(output_csv_path, index=False)
-
-# Exemple d'appel de la fonction avec les chemins appropriés
-process_dictionary('pos_upos/input_files/dico-utf8.xlsx', 'pos_upos/output_files/dico-utf8-UPOS.csv')
