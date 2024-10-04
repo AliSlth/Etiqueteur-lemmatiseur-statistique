@@ -16,11 +16,6 @@ def calculate_p_categorie(shelve_trigram, shelve_bigram, output_p_categorie):
         if search_key in dict_bigram: 
             value_tr, value_bi = dict_trigram[key_tr], dict_bigram[search_key]
             p_cat = value_tr / value_bi if value_bi != 0 else 0 
-            output_shelve[f"{key_tr}----{search_key}"] = p_cat  
-    
-
-shelve_trigram = 'training/stats_files/trigram'
-shelve_bigram = 'training/stats_files/bigram'
-output_p_categorie = 'training/output_files/p_categorie'              
+            output_shelve[f"{key_tr}----{search_key}"] = p_cat          
 
 calculate_p_categorie(shelve_trigram, shelve_bigram, output_p_categorie)
