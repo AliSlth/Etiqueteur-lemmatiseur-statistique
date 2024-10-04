@@ -26,6 +26,3 @@ def create_dic(csv_file_path, shelve_file_path):
 
     with shelve.open(shelve_file_path) as db:
         db.update(dico)
-
-# Exemple d'appel de la fonction
-create_dic('create_dic/output_file/dico-utf8-UPOS.csv', 'create_dic/output_file/dico_utf8_UPOS.shelve')
