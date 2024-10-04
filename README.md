@@ -48,8 +48,7 @@ Prérequis et installation :
 
 À partir du dictionnaire de formes fléchies "dico-utf8.xls"
 
-  `mix_dico.py`
-
+  `mix_dico.py` -> Crée un fichier shelve à partir d'un csv
 
 ## 2. train() Lecture du fichier conll et dictionnaires
 
