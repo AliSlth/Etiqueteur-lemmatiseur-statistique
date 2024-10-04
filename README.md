@@ -57,6 +57,7 @@ Prérequis et installation :
 
 
 ### Description
+Traite les fichiers CONLL dans le répertoire.
 On traite les lignes qui commencent par un chiffre et stocke les tokens de cette ligne dans une variable phrase_courante. Lorsqu'on rencontre une nouvelle phrase (saut de ligne rencontré), on traite la phrase courante et on ajoute les tokens de début et de fin de phrase <eos>. Ensuite, dans une seule boucle, le code calcule les bigrammes, trigrammes, et autres statistiques (lemmes, formes, etc.) en parcourant cette liste. 
 
 ### Listes de variables
