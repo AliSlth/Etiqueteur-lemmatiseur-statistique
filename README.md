@@ -43,9 +43,10 @@ Prérequis et installation :
 
 ## 1. Conversion des étiquettes 
 
-À partir du dictionnaire de formes fléchies "dico-utf8.xls"
+À partir du dictionnaire de formes fléchies "dico-utf8.xls" on souhaite générer un fichier CSV
 
-  `mix_dico.py` -> Crée un fichier shelve à partir d'un csv
+  `convert_dico.py` ->  Traite un fichier Excel contenant un dictionnaire de mots avec leurs catégories et sauvegarde le résultat dans un fichier CSV
+
 
 ## 2. train() Lecture du fichier conll et dictionnaires
 
