@@ -11,8 +11,4 @@ def probabilite_max(output_p_lemme, output_p_categorie, output_probabilite_max):
                 probability_max = value_key_1 * value_key_2
                 output_file[key_1] = probability_max
 
-output_p_lemme = 'training/output_files/p_lemme'
-output_p_categorie = 'training/output_files/p_categorie'
-output_probabilite_max = 'training/output_files/p_max'
-
 probabilite_max(output_p_lemme, output_p_categorie, output_probabilite_max)
