@@ -1,5 +1,5 @@
 # Etiqueteur-lemmatiseur-syntaxique
-L’objectif de ce projet est de développer une série de fonctions Python permettant d'entrainer un étiquetteur lemmatiseur statistique.
+L’objectif de ce projet est de développer une série de fonctions Python permettant d'entrainer un étiqueteur lemmatiseur statistique.
 
 Le projet est incomplet, il reste des fonctionnalités à développer.
 
